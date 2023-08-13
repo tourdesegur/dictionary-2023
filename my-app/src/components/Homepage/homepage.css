@@ -1,0 +1,11 @@
+.title {
+    color: var(--accent-color);
+    font-family: var(--accent-font);
+    font-weight: 400;
+    padding-left: 1px;
+}
+
+.title-d {
+    color: var(--text-color);
+    font-size: larger;
+}

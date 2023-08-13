@@ -9,9 +9,9 @@ function App() {
   return (
     <Router>
       <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/" element={<Bookmark />} />
-      <Route path="/" element={<Definition />} />
+      <Route exact path="/" element={<Homepage />} />
+      <Route path="/Bookmark" element={<Bookmark />} />
+      <Route path="/search/:word" element={<Definition />} />
       </Routes>
     </Router>
     

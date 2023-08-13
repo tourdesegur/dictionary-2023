@@ -16,9 +16,54 @@ body {
   font-family: var(--main-font);
 }
 
-h1 {
-  text-align: center;
-  color: var(--accent-color);
+.container-app{
+  width: 360px;
+  height:640px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 60px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
 }
 
+ .row-dictionary, .row-footer {
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.row-toggle{
+  text-align: right;
+  display: block;
+  margin: 10px 20px;
+}
+
+.toggle-image{
+  width: 40px;
+  padding: 0;
+}
+
+.row-dictionary {
+  text-align: center;
+}
+
+.row-footer{
+  margin-bottom: 10px;
+}
+
+.row-footer p {
+  font-family: var(--main-font);
+  font-size: 10px;
+  margin: 0;
+  line-height: 100%;
+}
+
+.row-footer a {
+  color: var(--text-color);
+}
+
+.row-footer a:hover{
+  color: var(--accent-color);
+  text-decoration: none;
+}
 

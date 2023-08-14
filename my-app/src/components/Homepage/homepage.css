@@ -1,3 +1,5 @@
+
+
 .title {
     color: var(--accent-color);
     font-family: var(--accent-font);
@@ -8,4 +10,27 @@
 .title-d {
     color: var(--text-color);
     font-size: larger;
+}
+
+.row-search {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color: var(--gray-color);
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    color: var(--gray-color);
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: var(--gray-color);
+    padding-left: 10px;
 }

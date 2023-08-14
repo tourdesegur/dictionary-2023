@@ -12,25 +12,47 @@
     font-size: larger;
 }
 
+.box {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
 .row-search {
     display: flex;
     width: 100%;
     align-items: center;
     background-color: var(--gray-color);
+    border: 1px solid transparent;
     border-radius: 6px;
     padding: 5px 10px;
 }
 
+.row-search:hover{
+    background-color: var(--white-color);
+    border: 1px solid var(--text-color);
+}
+
+
 .search-icon {
-    width: 20px;
-    height: 20px;
-    color: var(--gray-color);
+    color: var(--text-color);
 }
 
 input {
     flex: 1;
     border: none;
     outline: none;
-    background-color: var(--gray-color);
+    background-color: transparent;
     padding-left: 10px;
+    
+}
+
+.bookmark-icon{
+    font-size: 24px;
+    color: var(--accent-color);
+    
+}
+
+.bookmark-icon:hover {
+    color: var(--text-color);
 }

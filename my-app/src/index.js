@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faToggleOn, faBookmark } from '@fortawesome/free-solid-svg-icons';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -10,7 +12,8 @@ root.render(
   <React.StrictMode>
     <div className="container container-app">
         <div className="row row-toggle">
-            <img src="https://cdn-icons-png.flaticon.com/512/5720/5720464.png" className="toggle-image" alt="toggle"/>
+        <FontAwesomeIcon icon={faBookmark} className='bookmark-icon'/>
+        <FontAwesomeIcon icon={faToggleOn} className='toggle-icon'/>
         </div>
         <div className='row row-dictionary'>
           <App />

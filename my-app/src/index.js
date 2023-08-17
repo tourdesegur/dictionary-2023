@@ -12,8 +12,11 @@ root.render(
   <React.StrictMode>
     <div className="container container-app">
         <div className="row row-toggle">
-        <FontAwesomeIcon icon={faBookmark} className='bookmark-icon'/>
-        <FontAwesomeIcon icon={faToggleOn} className='toggle-icon'/>
+          <div className='col-6 col-logo'><h1 className="title-d">:D</h1></div>
+          <div className='col-6 col-toggle'>
+          <FontAwesomeIcon icon={faBookmark} className='bookmark-icon'/>
+            <FontAwesomeIcon icon={faToggleOn} className='toggle-icon'/>
+          </div>
         </div>
         <div className='row row-dictionary'>
           <App />

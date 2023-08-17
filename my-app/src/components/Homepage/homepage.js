@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './homepage.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
 import { faSearch as faSearchSolid } from '@fortawesome/free-solid-svg-icons';
@@ -7,14 +7,14 @@ import { faSearch as faSearchSolid } from '@fortawesome/free-solid-svg-icons';
 
 const Homepage = () => {
   const [word, setWord] = useState("");
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     const trimmedWord = word.trim();
     if (!trimmedWord || trimmedWord.split(' ').length > 1) return;
     console.log(trimmedWord);
-    history.push(`/search/${word}`);
+    navigate(`/search/${word}`);
   }
 
   return (
@@ -23,7 +23,7 @@ const Homepage = () => {
               <span className="title-d">:D</span>
               <span className="title">ictionary</span>
           </h1>
-          <div className="box">
+          <div className="box-search">
             <form onSubmit={handleSubmit}>
             <div className='row-search'>
             <FontAwesomeIcon icon={faSearchSolid} className='search-icon'/>

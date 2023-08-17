@@ -35,20 +35,35 @@ body {
 }
 
 .row-toggle{
-text-align: right;
-justify-content: space-between;
   margin: 20px 20px 0 20px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
+.col-logo, .col-bookmark, .col-toggle {
+  padding: 0;
+}
+
+.col-logo .title-d{
+  font-size: 45px;
+  margin: 0;
+  color: transparent;
+}
+
+.col-bookmark {
+  text-align: center;
+  padding-top: 4px;
+}
+
+.col-toggle{
+  text-align: right;
+}
 
 .toggle-icon, .bookmark-icon{
   font-size: 28px;
   color: var(--accent-color);
   padding: 0 0 0 10px;
   width: max-content;
-  text-align: right;
-  
 }
 
 .bookmark-icon:hover, .toggle-icon:hover {

@@ -1,4 +1,10 @@
-
+.homepage{
+  width: 100%;
+  height:570px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
 
 .title {
     color: var(--accent-color);
@@ -10,6 +16,10 @@
 .title-d {
     color: var(--text-color);
     font-size: larger;
+}
+
+.logo {
+    color: transparent;
 }
 
 .box {
